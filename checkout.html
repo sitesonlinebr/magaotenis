@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout • Magão Tênis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container headerRow">
+    <div class="logo">FINALIZAR PEDIDO</div>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2 class="title">Resumo do Pedido</h2>
+  <div id="checkoutItems" class="checkoutBox"></div>
+
+  <h2 class="title">Dados do Cliente</h2>
+
+  <form id="checkoutForm" class="adminCard">
+
+    <input id="nome" placeholder="Nome completo" required>
+
+    <input id="telefone" placeholder="Telefone (opcional)">
+
+    <input id="endereco" placeholder="Endereço" required>
+
+    <select id="pagamento" required>
+      <option value="">Forma de pagamento</option>
+      <option value="Pix">Pix</option>
+      <option value="Cartão (Débito)">Cartão (Débito)</option>
+      <option value="Cartão (Crédito)">Cartão (Crédito)</option>
+      <option value="Dinheiro">Dinheiro</option>
+    </select>
+
+    <input id="obs" placeholder="Observações (opcional)">
+
+    <button class="primaryBtn">
+      Finalizar pedido
+    </button>
+
+  </form>
+
+</main>
+
+<script src="checkout.js"></script>
+</body>
+</html>
